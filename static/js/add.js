@@ -1,9 +1,9 @@
 $(function(){
-	$('#btnSignUp4').click(function(){
+	$('#btnSignUp5').click(function(){
 		$.ajax({
-			url: '/showSearch',
+			url: '/showCarAdd',
 			data: $('form').serialize(),
-			type: 'GET',
+			type: 'POST',
 			success: function(response){
 				console.log(response);
 			},

@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Python Flask Bucket List App</title>
+
+
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../static/css/signup.css" rel="stylesheet">
+    <script src="../static/js/jquery-1.11.2.js"></script>
+    <script src="../static/js/search.js"></script>
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="/logout">Logout</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">My Dealership</h3>
+      </div>
+
+      <div class="jumbotron">
+          <form class="form-signin" action="/showSalesUpdate" method="post">
+            <h1>Hello {{ session['user'] }}!!</h1>
+              <label for="inputSearch5" class="sr-only">Search</label>
+            <input type="input" name="VIN" id="inputSearch5" class="form-control" placeholder="VIN">
+              <label for="inputSearch4" class="sr-only">Search</label>
+            <input type="input" name="Date" id="inputSearch4" class="form-control" placeholder="Date YYYY-MM-DD">
+              <label for="inputSearch4" class="sr-only">Search</label>
+            <input type="input" name="CustomerFirstName" id="inputSearch4" class="form-control" placeholder="Customer First Name">
+              <label for="inputSearch1" class="sr-only">Search</label>
+            <input type="input" name="CustomerLastName" id="inputSearch1" class="form-control" placeholder="Customer Last  Name">
+              <label for="inputSearch2" class="sr-only">Search</label>
+            <input type="input" name="SalespersonFirstName" id="inputSearch2" class="form-control" placeholder="Salesperson First Name">
+              <label for="inputSearch3" class="sr-only">Search</label>
+            <input type="input" name="SalespersonLastName" id="inputSearch3" class="form-control" placeholder="Salesperson Last Name">
+              <button id="btnSearch4" class="btn btn-lg btn-primary btn-block" type="submit">Update</button>
+          </form>
+      </div>
+      <footer class="footer">
+        <p>&copy; Company 2015</p>
+      </footer>
+    </div>
+  </body>
+</html>

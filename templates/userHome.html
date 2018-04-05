@@ -10,8 +10,9 @@
     <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
     <link href="../static/css/signup.css" rel="stylesheet">
     <script src="../static/js/jquery-1.11.2.js"></script>
-    
-   
+    <script src="../static/js/search.js"></script>
+
+
   </head>
 
   <body>
@@ -23,20 +24,18 @@
             <li role="presentation" class="active"><a href="/logout">Logout</a></li>
           </ul>
         </nav>
-        <h3 class="text-muted">Python Flask App</h3>
+        <h3 class="text-muted">My Dealership</h3>
       </div>
-
-      <div class="jumbotron">
-        <h1>Welcome Home !!</h1>
-       
+        <div class="jumbotron">
+            <h1>Welcome {{ session['user'] }}</h1>
+            <p><a class="btn btn-lg btn-success" href="/showSearch" role="button">Search Vehicles</a></p>
+            <p><a class="btn btn-lg btn-success" href="/showUpdate" role="button">Sell Car</a></p>
+            <p><a class="btn btn-lg btn-success" href="/showSales" role="button">Search Sales Invoice</a></p>
+            <p><a class="btn btn-lg btn-success" href="/addCar" role="button">Add Car</a></p>
       </div>
-
-      
-
       <footer class="footer">
         <p>&copy; Company 2015</p>
       </footer>
-
     </div>
   </body>
 </html>

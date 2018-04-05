@@ -8,7 +8,8 @@
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
-
+    <link href="../static/css/signup.css" rel="stylesheet">
+    
    
   </head>
 
@@ -17,7 +18,7 @@
     <div class="container">
       <div class="header">
         <nav>
-          <ul class="nav nav-pills pull-right">
+           <ul class="nav nav-pills pull-right">
             <li role="presentation" class="active"><a href="#">Home</a></li>
             <li role="presentation"><a href="/showSignin">Sign In</a></li>
  	    <li role="presentation"><a href="/showSignUp">Sign Up</a></li>
@@ -27,10 +28,20 @@
       </div>
 
       <div class="jumbotron">
-        <h1>Welcome!</h1>
-        <p class="lead"></p>
-        <p><a class="btn btn-lg btn-success" href="/showSignUp" role="button">Sign up today</a></p>
+          <h1>Found</h1>
+          <p><a class="btn btn-lg btn-success" href="/userHome" role="button">Search</a></p>
       </div>
+        <div class="row marketing">
+            {% for row in data %}
+                <div class="col-lg-6">
+                    <h4>Customer: {{ row[2] }} {{ row[3] }}</h4>
+                    <h5>Purchased: {{ row[1] }}</h5>
+                    <p>Make: {{ row[4] }} Model: {{ row[5] }} Salesperson: {{ row[6] }} {{ row[7] }}</p>
+                </div>
+            {% endfor %}
+        </div>
+
+      
 
       <footer class="footer">
         <p>&copy; Company 2015</p>
@@ -39,4 +50,3 @@
     </div>
   </body>
 </html>
-
