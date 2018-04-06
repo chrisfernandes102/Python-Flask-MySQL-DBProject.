@@ -42,6 +42,22 @@ def userHome():
         return render_template('error.html', error='Unauthorized Access')
 
 
+@app.route('/adminHome')
+def adminHome():
+    if session.get('user'):
+        return render_template('adminHome.html')
+    else:
+        return render_template('error.html', error='Unauthorized Access')
+
+
+@app.route('/showSalesperson')
+def showSalesperson():
+    if session.get('user'):
+        return render_template('salesperson.html')
+    else:
+        return render_template('error.html', error='Unauthorized Access')
+
+
 @app.route('/showSearch')
 def search():
     if session.get('user'):
@@ -95,12 +111,28 @@ def validateLogin():
         cursor.execute(query, parameter)
         data = cursor.fetchall()
 
+        con = mysql.connect()
+        cursor = con.cursor()
+        query2 = "SELECT * FROM Admin WHERE Username = %s AND Password = %s"
+        parameter2 = (_username, _password)
+        cursor.execute(query2, parameter2)
+        data2 = cursor.fetchall()
+
         if len(data) > 0:
             with closing(mysql.connect()) as conn:
                 with closing(conn.cursor()) as cursor:
                     if str(data[0][4]) == _password:
                         session['user'] = data[0][3]
                         return redirect('/userHome', session['user'])
+                    else:
+                        return render_template('error.html', error='Wrong Email address or Password.')
+
+        elif len(data2) > 0:
+            with closing(mysql.connect()) as conn:
+                with closing(conn.cursor()) as cursor:
+                    if str(data2[0][4]) == _password:
+                        session['user'] = data2[0][3]
+                        return redirect('/adminHome', session['user'])
                     else:
                         return render_template('error.html', error='Wrong Email address or Password.')
         else:
@@ -438,6 +470,47 @@ def carAdd():
 
     except Exception as e:
         return json.dumps({'error': str(e)})
+
+
+@app.route('/showSalesPerson', methods=['GET', 'POST'])
+def salesperson():
+    try:
+        _SalespersonFirstName = request.form['SalespersonFirstName']
+        _SalespersonLastName = request.form['SalespersonLastName']
+
+
+        if _SalespersonFirstName and _SalespersonLastName:
+            with closing(mysql.connect()) as conn:
+                with closing(conn.cursor()) as cursor:
+                    # connect to mysql
+
+                    con = mysql.connect()
+                    cursor = con.cursor()
+                    query = "SELECT * FROM Salesperson WHERE FirstName = %s AND LastName = %s"
+                    parameter = (_SalespersonFirstName, _SalespersonLastName)
+                    cursor.execute(query, parameter)
+                    data = cursor.fetchall()
+
+                    if str(data):
+                        return render_template('foundSalesPerson.html', data=data)
+                    else:
+                        return render_template('error.html', error='Could not find Sales Person')
+        else:
+            # connect to mysql
+            con = mysql.connect()
+            cursor = con.cursor()
+            query = "SELECT * FROM Salesperson"
+            cursor.execute(query)
+            data = cursor.fetchall()
+
+            if str(data):
+                return render_template('foundSalesPerson.html', data=data)
+            else:
+                return render_template('error.html', error='Could not find Sales Person')
+
+
+    except Exception as e:
+        return render_template('error.html', error=str(e))
 
 
 if __name__ == "__main__":

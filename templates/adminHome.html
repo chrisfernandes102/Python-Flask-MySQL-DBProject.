@@ -4,7 +4,7 @@
   <head>
     <title>Database Systems App</title>
 
-   
+
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
@@ -24,10 +24,11 @@
             <li role="presentation" class="active"><a href="/logout">Logout</a></li>
           </ul>
         </nav>
-        <h3 class="text-muted">My Dealership</h3>
+        <h3 class="text-muted">Admin Page of Dealership</h3>
       </div>
         <div class="jumbotron">
-            <h1>Welcome {{ session['user'] }}</h1>
+            <h1>Welcome Admin {{ session['user'] }}</h1>
+            <p><a class="btn btn-lg btn-success" href="/showSalesperson" role="button">Search Sales Person</a></p>
             <p><a class="btn btn-lg btn-success" href="/showSearch" role="button">Search Vehicles</a></p>
             <p><a class="btn btn-lg btn-success" href="/showSales" role="button">Search Sales Invoice</a></p>
             <p><a class="btn btn-lg btn-success" href="/showUpdate" role="button">Sell Car</a></p>
