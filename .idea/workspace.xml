@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d48db69e-bf53-4443-9830-ac88db4f36ed" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/application.py" afterPath="$PROJECT_DIR$/application.py" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,33 +59,33 @@
       <file leaf-file-name="application.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="517" column="0" lean-forward="true" selection-start-line="517" selection-start-column="0" selection-end-line="517" selection-end-column="0" />
+            <state relative-caret-position="7740">
+              <caret line="516" column="27" lean-forward="true" selection-start-line="516" selection-start-column="27" selection-end-line="516" selection-end-column="27" />
               <folding>
                 <element signature="e#0#74#0" expanded="true" />
-                <marker date="1523312605400" expanded="true" signature="2694:2757" ph="SELECT * FRO... Salesperson" />
-                <marker date="1523312605400" expanded="true" signature="2955:3012" ph="SELECT * FRO... Admin" />
-                <marker date="1523312605400" expanded="true" signature="4890:4977" ph="INSERT INTO Salesperson... " />
-                <marker date="1523312605400" expanded="true" signature="6169:6201" ph="SELECT * FRO... Car" />
-                <marker date="1523312605400" expanded="true" signature="6887:6920" ph="SELECT * FRO... Car" />
-                <marker date="1523312605400" expanded="true" signature="7608:7642" ph="SELECT * FRO... Car" />
-                <marker date="1523312605400" expanded="true" signature="8330:8363" ph="SELECT * FRO... Car" />
-                <marker date="1523312605400" expanded="true" signature="9051:9085" ph="SELECT * FRO... Car" />
-                <marker date="1523312605400" expanded="true" signature="9767:9784" ph="SELECT * FRO... Car" />
-                <marker date="1523312605400" expanded="true" signature="10926:11474" ph="SELECT Sales... SalesInvoice" />
-                <marker date="1523312605400" expanded="true" signature="12189:12736" ph="SELECT Sales... SalesInvoice" />
-                <marker date="1523312605400" expanded="true" signature="13479:14058" ph="SELECT Sales... SalesInvoice" />
-                <marker date="1523312605400" expanded="true" signature="14786:15323" ph="SELECT Sales... SalesInvoice" />
-                <marker date="1523312605400" expanded="true" signature="16643:16700" ph="SELECT * FRO... Customer" />
-                <marker date="1523312605400" expanded="true" signature="16938:16998" ph="SELECT * FRO... Salesperson" />
-                <marker date="1523312605400" expanded="true" signature="17245:17348" ph="INSERT INTO SalesInvoice... " />
-                <marker date="1523312605400" expanded="true" signature="17545:17608" ph="UPDATE Car... " />
-                <marker date="1523312605400" expanded="true" signature="17740:17781" ph="SELECT * FRO... SalesInvoice" />
-                <marker date="1523312605400" expanded="true" signature="19119:19295" ph="INSERT INTO Car... " />
-                <marker date="1523312605400" expanded="true" signature="19532:19713" ph="INSERT INTO Car... " />
-                <marker date="1523312605400" expanded="true" signature="19900:19932" ph="SELECT * FRO... Car" />
-                <marker date="1523312605400" expanded="true" signature="20938:21002" ph="SELECT * FRO... Salesperson" />
-                <marker date="1523312605400" expanded="true" signature="21556:21581" ph="SELECT * FRO... Salesperson" />
+                <marker date="1523313850693" expanded="true" signature="2699:2762" ph="SELECT * FRO... Salesperson" />
+                <marker date="1523313850693" expanded="true" signature="2960:3017" ph="SELECT * FRO... Admin" />
+                <marker date="1523313850693" expanded="true" signature="4895:4982" ph="INSERT INTO Salesperson... " />
+                <marker date="1523313850693" expanded="true" signature="6174:6206" ph="SELECT * FRO... Car" />
+                <marker date="1523313850693" expanded="true" signature="6892:6925" ph="SELECT * FRO... Car" />
+                <marker date="1523313850693" expanded="true" signature="7613:7647" ph="SELECT * FRO... Car" />
+                <marker date="1523313850693" expanded="true" signature="8335:8368" ph="SELECT * FRO... Car" />
+                <marker date="1523313850693" expanded="true" signature="9056:9090" ph="SELECT * FRO... Car" />
+                <marker date="1523313850693" expanded="true" signature="9772:9789" ph="SELECT * FRO... Car" />
+                <marker date="1523313850693" expanded="true" signature="10931:11479" ph="SELECT Sales... SalesInvoice" />
+                <marker date="1523313850693" expanded="true" signature="12194:12741" ph="SELECT Sales... SalesInvoice" />
+                <marker date="1523313850693" expanded="true" signature="13484:14063" ph="SELECT Sales... SalesInvoice" />
+                <marker date="1523313850693" expanded="true" signature="14791:15328" ph="SELECT Sales... SalesInvoice" />
+                <marker date="1523313850693" expanded="true" signature="16648:16705" ph="SELECT * FRO... Customer" />
+                <marker date="1523313850693" expanded="true" signature="16943:17003" ph="SELECT * FRO... Salesperson" />
+                <marker date="1523313850693" expanded="true" signature="17250:17353" ph="INSERT INTO SalesInvoice... " />
+                <marker date="1523313850693" expanded="true" signature="17550:17613" ph="UPDATE Car... " />
+                <marker date="1523313850693" expanded="true" signature="17745:17786" ph="SELECT * FRO... SalesInvoice" />
+                <marker date="1523313850693" expanded="true" signature="19124:19300" ph="INSERT INTO Car... " />
+                <marker date="1523313850693" expanded="true" signature="19537:19718" ph="INSERT INTO Car... " />
+                <marker date="1523313850693" expanded="true" signature="19905:19937" ph="SELECT * FRO... Car" />
+                <marker date="1523313850693" expanded="true" signature="20943:21007" ph="SELECT * FRO... Salesperson" />
+                <marker date="1523313850693" expanded="true" signature="21561:21586" ph="SELECT * FRO... Salesperson" />
               </folding>
             </state>
           </provider>
@@ -145,16 +146,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
               <caret line="38" column="14" lean-forward="false" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="searchSalesPerson.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/searchSalesPerson.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -561,9 +552,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#74#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -578,9 +567,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#74#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -595,9 +582,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#74#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -612,9 +597,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="5" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#74#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -622,9 +605,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#74#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -639,9 +620,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#74#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -656,9 +635,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#74#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -673,9 +650,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#74#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -770,14 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -926,6 +893,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.elasticbeanstalk/config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -936,33 +911,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="517" column="0" lean-forward="true" selection-start-line="517" selection-start-column="0" selection-end-line="517" selection-end-column="0" />
+        <state relative-caret-position="7740">
+          <caret line="516" column="27" lean-forward="true" selection-start-line="516" selection-start-column="27" selection-end-line="516" selection-end-column="27" />
           <folding>
             <element signature="e#0#74#0" expanded="true" />
-            <marker date="1523312605400" expanded="true" signature="2694:2757" ph="SELECT * FRO... Salesperson" />
-            <marker date="1523312605400" expanded="true" signature="2955:3012" ph="SELECT * FRO... Admin" />
-            <marker date="1523312605400" expanded="true" signature="4890:4977" ph="INSERT INTO Salesperson... " />
-            <marker date="1523312605400" expanded="true" signature="6169:6201" ph="SELECT * FRO... Car" />
-            <marker date="1523312605400" expanded="true" signature="6887:6920" ph="SELECT * FRO... Car" />
-            <marker date="1523312605400" expanded="true" signature="7608:7642" ph="SELECT * FRO... Car" />
-            <marker date="1523312605400" expanded="true" signature="8330:8363" ph="SELECT * FRO... Car" />
-            <marker date="1523312605400" expanded="true" signature="9051:9085" ph="SELECT * FRO... Car" />
-            <marker date="1523312605400" expanded="true" signature="9767:9784" ph="SELECT * FRO... Car" />
-            <marker date="1523312605400" expanded="true" signature="10926:11474" ph="SELECT Sales... SalesInvoice" />
-            <marker date="1523312605400" expanded="true" signature="12189:12736" ph="SELECT Sales... SalesInvoice" />
-            <marker date="1523312605400" expanded="true" signature="13479:14058" ph="SELECT Sales... SalesInvoice" />
-            <marker date="1523312605400" expanded="true" signature="14786:15323" ph="SELECT Sales... SalesInvoice" />
-            <marker date="1523312605400" expanded="true" signature="16643:16700" ph="SELECT * FRO... Customer" />
-            <marker date="1523312605400" expanded="true" signature="16938:16998" ph="SELECT * FRO... Salesperson" />
-            <marker date="1523312605400" expanded="true" signature="17245:17348" ph="INSERT INTO SalesInvoice... " />
-            <marker date="1523312605400" expanded="true" signature="17545:17608" ph="UPDATE Car... " />
-            <marker date="1523312605400" expanded="true" signature="17740:17781" ph="SELECT * FRO... SalesInvoice" />
-            <marker date="1523312605400" expanded="true" signature="19119:19295" ph="INSERT INTO Car... " />
-            <marker date="1523312605400" expanded="true" signature="19532:19713" ph="INSERT INTO Car... " />
-            <marker date="1523312605400" expanded="true" signature="19900:19932" ph="SELECT * FRO... Car" />
-            <marker date="1523312605400" expanded="true" signature="20938:21002" ph="SELECT * FRO... Salesperson" />
-            <marker date="1523312605400" expanded="true" signature="21556:21581" ph="SELECT * FRO... Salesperson" />
+            <marker date="1523313850693" expanded="true" signature="2699:2762" ph="SELECT * FRO... Salesperson" />
+            <marker date="1523313850693" expanded="true" signature="2960:3017" ph="SELECT * FRO... Admin" />
+            <marker date="1523313850693" expanded="true" signature="4895:4982" ph="INSERT INTO Salesperson... " />
+            <marker date="1523313850693" expanded="true" signature="6174:6206" ph="SELECT * FRO... Car" />
+            <marker date="1523313850693" expanded="true" signature="6892:6925" ph="SELECT * FRO... Car" />
+            <marker date="1523313850693" expanded="true" signature="7613:7647" ph="SELECT * FRO... Car" />
+            <marker date="1523313850693" expanded="true" signature="8335:8368" ph="SELECT * FRO... Car" />
+            <marker date="1523313850693" expanded="true" signature="9056:9090" ph="SELECT * FRO... Car" />
+            <marker date="1523313850693" expanded="true" signature="9772:9789" ph="SELECT * FRO... Car" />
+            <marker date="1523313850693" expanded="true" signature="10931:11479" ph="SELECT Sales... SalesInvoice" />
+            <marker date="1523313850693" expanded="true" signature="12194:12741" ph="SELECT Sales... SalesInvoice" />
+            <marker date="1523313850693" expanded="true" signature="13484:14063" ph="SELECT Sales... SalesInvoice" />
+            <marker date="1523313850693" expanded="true" signature="14791:15328" ph="SELECT Sales... SalesInvoice" />
+            <marker date="1523313850693" expanded="true" signature="16648:16705" ph="SELECT * FRO... Customer" />
+            <marker date="1523313850693" expanded="true" signature="16943:17003" ph="SELECT * FRO... Salesperson" />
+            <marker date="1523313850693" expanded="true" signature="17250:17353" ph="INSERT INTO SalesInvoice... " />
+            <marker date="1523313850693" expanded="true" signature="17550:17613" ph="UPDATE Car... " />
+            <marker date="1523313850693" expanded="true" signature="17745:17786" ph="SELECT * FRO... SalesInvoice" />
+            <marker date="1523313850693" expanded="true" signature="19124:19300" ph="INSERT INTO Car... " />
+            <marker date="1523313850693" expanded="true" signature="19537:19718" ph="INSERT INTO Car... " />
+            <marker date="1523313850693" expanded="true" signature="19905:19937" ph="SELECT * FRO... Car" />
+            <marker date="1523313850693" expanded="true" signature="20943:21007" ph="SELECT * FRO... Salesperson" />
+            <marker date="1523313850693" expanded="true" signature="21561:21586" ph="SELECT * FRO... Salesperson" />
           </folding>
         </state>
       </provider>

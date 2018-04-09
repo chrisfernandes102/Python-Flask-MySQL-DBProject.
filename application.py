@@ -6,7 +6,7 @@ from contextlib import closing
 
 mysql = MySQL()
 app = Flask(__name__)
-app.secret_key = 'why would I tell you my secret key?'
+app.secret_key = 'qvmwCIUYFaNvllDlpccKkuBgJge9fXmDmV70JoS+'
 
 # MySQL configurations
 app.config['MYSQL_DATABASE_USER'] = 'flask'
@@ -514,4 +514,4 @@ def salesperson():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0')
