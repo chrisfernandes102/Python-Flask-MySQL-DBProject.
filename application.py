@@ -9,10 +9,10 @@ app = Flask(__name__)
 app.secret_key = 'qvmwCIUYFaNvllDlpccKkuBgJge9fXmDmV70JoS+'
 
 # MySQL configurations
-app.config['MYSQL_DATABASE_USER'] = 'flask'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'chriselise2'
+app.config['MYSQL_DATABASE_USER'] = 'root'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'EGR327'
 app.config['MYSQL_DATABASE_DB'] = 'VehicleDB'
-app.config['MYSQL_DATABASE_HOST'] = 'dbproject.czooch6gy5ll.us-east-2.rds.amazonaws.com'
+app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 mysql.init_app(app)
 
 
@@ -514,4 +514,4 @@ def salesperson():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=80)
+    app.run(port=5050)
