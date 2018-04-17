@@ -398,16 +398,19 @@ def updateSalesInvoice():
                     data = cursor.fetchall()
                     conn.commit()
 
+
                     query2 = "SELECT * FROM Salesperson WHERE FirstName=%s AND LastName=%s"
                     parameter2 = (_SalespersonFirstName, _SalespersonLastName)
                     cursor.execute(query2, parameter2)
                     data2 = cursor.fetchall()
                     conn.commit()
 
+
                     query3 = "INSERT INTO SalesInvoice(InvoiceNumberDate, CustomerID, VIN, SalespersonID) VALUES ('%s', %s, '%s', %s)" % (_Date, data[0][0], _Vin, data2[0][0])
                     cursor.execute(query3)
                     data3 = cursor.fetchall()
                     conn.commit()
+
 
                     query5 = "UPDATE Car SET SalesPersonID=%s AND CarForSale=0 WHERE VIN='%s'" % (data2[0][0], _Vin)
                     cursor.execute(query5)
