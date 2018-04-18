@@ -382,14 +382,28 @@ def updateSalesInvoice():
         _Date = request.form['Date']
         _CustomerFirstName = request.form['CustomerFirstName']
         _CustomerLastName = request.form['CustomerLastName']
+        _CustomerPhoneNumber = request.form['PhoneNumber']
+        _CustomerAddress = request.form['Address']
+        _CustomerZipcode = request.form['Zipcode']
+        _CustomerCountry = request.form['Country']
         _SalespersonFirstName = request.form['SalespersonFirstName']
         _SalespersonLastName = request.form['SalespersonLastName']
 
         # validate the received values
-        if _CustomerFirstName and _CustomerLastName and _SalespersonFirstName and _SalespersonLastName and _Vin:
+        if _CustomerFirstName and _CustomerLastName and _CustomerPhoneNumber and\
+                _CustomerAddress and _CustomerZipcode and _CustomerCountry and _SalespersonFirstName \
+                and _SalespersonLastName and _Vin:
             with closing(mysql.connect()) as conn:
                 with closing(conn.cursor()) as cursor:
                     # All Good, let's call MySQL
+                    conn = mysql.connect()
+                    cursor = conn.cursor()
+                    query = "INSERT INTO Customer(FirstName, LastName, PhoneNumber, Address, Zipcode, Country) VALUES " \
+                            "('%s','%s','%s','%s',%s,'%s')" % (_CustomerFirstName,_CustomerLastName,_CustomerPhoneNumber,_CustomerAddress, _CustomerZipcode,_CustomerCountry)
+                    cursor.execute(query)
+                    data6 = cursor.fetchall()
+                    conn.commit()
+
                     conn = mysql.connect()
                     cursor = conn.cursor()
                     query1 = "SELECT * FROM Customer WHERE FirstName=%s AND LastName=%s"
@@ -412,7 +426,7 @@ def updateSalesInvoice():
                     conn.commit()
 
 
-                    query5 = "UPDATE Car SET SalesPersonID=%s AND CarForSale=0 WHERE VIN='%s'" % (data2[0][0], _Vin)
+                    query5 = "UPDATE Car SET SalesPersonID=%s, CarForSale=0 WHERE VIN='%s'" % (data2[0][0], _Vin)
                     cursor.execute(query5)
                     conn.commit()
 
