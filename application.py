@@ -382,7 +382,7 @@ def updateSalesInvoice():
         _Date = request.form['Date']
         _CustomerFirstName = request.form['CustomerFirstName']
         _CustomerLastName = request.form['CustomerLastName']
-        _CustomerPhoneNumber = request.form['PhoneNumber']
+        _CustomerPhoneNumber = request.form['CustomerPhoneNumber']
         _CustomerAddress = request.form['Address']
         _CustomerZipcode = request.form['Zipcode']
         _CustomerCountry = request.form['Country']
@@ -399,8 +399,10 @@ def updateSalesInvoice():
                     conn = mysql.connect()
                     cursor = conn.cursor()
                     query = "INSERT INTO Customer(FirstName, LastName, PhoneNumber, Address, Zipcode, Country) VALUES " \
-                            "('%s','%s','%s','%s',%s,'%s')" % (_CustomerFirstName,_CustomerLastName,_CustomerPhoneNumber,_CustomerAddress, _CustomerZipcode,_CustomerCountry)
-                    cursor.execute(query)
+                            "('%s','%s','%s','%s',%s,'%s')" % (_CustomerFirstName,_CustomerLastName,_CustomerPhoneNumber,
+                                                               _CustomerAddress, _CustomerZipcode,_CustomerCountry)
+                    parameter = (_CustomerFirstName, _CustomerLastName)
+                    cursor.execute(query, parameter)
                     data6 = cursor.fetchall()
                     conn.commit()
 
@@ -426,7 +428,7 @@ def updateSalesInvoice():
                     conn.commit()
 
 
-                    query5 = "UPDATE Car SET SalesPersonID=%s, CarForSale=0 WHERE VIN='%s'" % (data2[0][0], _Vin)
+                    query5 = "UPDATE Car SET SalesPersonID=%s AND CarForSale=0 WHERE VIN='%s'" % (data2[0][0], _Vin)
                     cursor.execute(query5)
                     conn.commit()
 
