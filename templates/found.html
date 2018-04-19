@@ -24,11 +24,21 @@
           <p><a class="btn btn-lg btn-success" href="/userHome" role="button">Search</a></p>
           <div class="row marketing">
             {% for row in data %}
-                <div class="col-lg-6">
-                    <h4>{{ row[1] }} {{ row[2] }}</h4>
-                    <h5>${{ row[4] }}</h5>
-                    <p>VIN: {{ row[0] }} Year: {{ row[3] }} Color: {{ row[6] }}</p>
-                </div>
+                {% if  row[5] == 1 %}
+                    <div class="col-lg-6">
+                        <h4>{{ row[1] }} {{ row[2] }}</h4>
+                        <h5>${{ row[4] }}</h5>
+                        <p>VIN: {{ row[0] }} Year: {{ row[3] }} Color: {{ row[6] }} For Sale: Yes</p>
+                    </div>
+                {% endif %}
+                {% if  row[5] == 0 %}
+                    <div class="col-lg-6">
+                        <h4>{{ row[1] }} {{ row[2] }}</h4>
+                        <h5>${{ row[4] }}</h5>
+                        <p>VIN: {{ row[0] }} Year: {{ row[3] }} Color: {{ row[6] }} For Sale: No</p>
+                    </div>
+                {% endif %}
+
             {% endfor %}
         </div>
       </div>
